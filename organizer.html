@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset = "utf-8">
+        <link href = "css/organizer.css" rel = "stylesheet"></style>
+        <title>Organizer</title>
+
+        <script>
+            function checkIn() {
+                alert("checked in");
+            }
+
+            function checkOut() {
+                alert("checked out");
+            }
+        </script>
+    </head>
+    <body>
+        <div class = "checkin">
+            <form onsubmit="checkIn()">
+                <div class = "nameinput">
+                    <input type="text" id = "mentorName">
+                </div>
+                
+                <div class = "submission">
+                    <input type = "submit" value="Check In">
+                </div>
+            </form>
+        </div>
+        
+        <div class = "checkout">
+            <form onsubmit="checkOut()">
+                <div class="nameinput">
+                    <input type="text" id = "mentorName">
+                </div>
+                
+                <div class = "submission">
+                    <input type = "submit" value="Check Out">
+                </div>
+                
+            </form>
+        </div>
+
+        <div class = "mentors">
+
+        </div>
+
+        <div class = "tickets">
+
+        </div>
+
+        <script src = "js/mentor.js"></script>
+    </body>
+</html>
