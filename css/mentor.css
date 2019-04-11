@@ -1,0 +1,20 @@
+body {
+    background-color: #cea9b3;
+}
+
+.top {
+    text-align: center;
+}
+
+tr, td, th {
+    border: 1px solid black;
+}
+
+td, th {
+    text-align: center;
+}
+
+.ticketTable {
+    border: 1px solid black;
+    margin: 0px auto;
+}
