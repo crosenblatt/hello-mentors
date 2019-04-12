@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href = "css/organizer.css" rel = "stylesheet"></style>
+        <title>Organizer</title>
+        <script>
+            function submitQuery() {
+                alert("question submitted");
+            }
+        </script>
+    </head>
+    <body>
+        <div class = "container-fluid">
+            <form id = "submit-ticket-form">
+                <fieldset>
+                    <legend>Sign in Mentor</legend>
+                    <div class = "controls">
+                        <div class = "row">
+                            <div class = "col">
+                                <div class = "form-group">
+                                    <label for = "name">Name</label>
+                                    <input id = "name" type = "text" class = "form-control" required = "required" data-error="Please enter your name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class = "col-md-12">
+                                <input type = "submit" class = "btn btn-submit" onclick = "submitQuery()">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class = "container-fluid">
+            <form id = "submit-ticket-form">
+                <fieldset>
+                    <legend>Sign Out Mentor</legend>
+                    <div class = "controls">
+                        <div class = "row">
+                            <div class = "col">
+                                <div class = "form-group">
+                                    <label for = "name">Name</label>
+                                    <input id = "name" type = "text" class = "form-control" required = "required" data-error="Please enter your name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class = "col-md-12">
+                                <input type = "submit" class = "btn btn-submit" onclick = "submitQuery()">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="container-fluid">
+            <div class= "row"> 
+                <div class="col">
+                    <div class = "container-fluid">
+                        <div class = "table-responsive">
+                            <table class = "table-striped">
+                                <caption>Current Mentors</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Skills</th>
+                                        <th>Status</th>
+                                        <th>End Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Chris Rosenblatt</td>
+                                        <td>None</td>
+                                        <td>Still alive but Im barely breathing</td>
+                                        <td>Never</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class = "container-fluid">
+                        <div class = "table-responsive">
+                            <table class = "table-striped">
+                                <caption>All Tickets</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Problem</th>
+                                        <th>Time Opened</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Shit Broke</td>
+                                        <td>All the time</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src = "js/hacker.js"></script>
+    </body>
+</html>
