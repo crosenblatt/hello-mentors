@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
+    	<title>Hello Mentors Login</title>
+    	<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Hello Mentors Login</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./css/login.css">
     </head>
     <body>
-        <h1>Login</h1>
-            <form>
-                <p>Username: </p> <input type = "text" name = "username">
-                <p>Password: </p> <input type = "password" name = "password">
-            </br>
-                <input type="submit" value = "Login">
-            </form> 
+    	<div class="container">
+    		<div class="d-flex justify-content-center h-100">
+    			<div class="card">
+    				<div class="card-header">
+    					<h3>Sign In</h3>
+    				</div>
+    				<div class="card-body">
+    					<form>
+    						<div class="input-group form-group">
+    							<div class="input-group-prepend">
+    								<span class="input-group-text">
+    									<i class="fas fa-user"></i>
+    								</span>
+    							</div>
+    							<input type="text" class="form-control" placeholder="username">
+    						</div>
+    						<div class="input-group form-group">
+    							<div class="input-group-prepend">
+    								<span class="input-group-text">
+										<i class="fas fa-key"></i>
+    								</span>
+    							</div>
+    							<input type="password" class="form-control" placeholder="password">
+    						</div>
+    						<div class="row align-items-center remember-checkbox-text-color remember-checkbox-size">
+    							<input type="checkbox" name="RememberAccount" value="Remember"> Remember Me <br>
+    						</div>
+    						<div class="form-group">
+    							<input type="submit" value="Login" class="btn float-right login_btn">
+    						</div>
+    					</form>
+    				</div>
+    			</div>
+    		</div>
+        </div>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </body>
 </html>
