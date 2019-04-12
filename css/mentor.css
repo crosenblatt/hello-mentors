@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
 body {
-    font-family: "Open Sans", sans-serif;
+    background-image: url('https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA10182_hires.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: auto;
+    font-family: 'Varela Round', sans-serif;
     line-height: 1.25;
   }
   
@@ -14,6 +20,7 @@ body {
   
   table caption {
     font-size: 1.5em;
+    color: white;
     margin: .5em 0 .75em;
   }
   
