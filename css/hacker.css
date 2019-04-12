@@ -1,4 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+html,body{
+background-image: url('https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA10182_hires.jpg');
+background-size: auto;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Varela Round', sans-serif;
+}
+
+.card{
+margin-top: auto;
+margin-bottom: auto;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
 fieldset {
+	color: white;
+	background-color: rgba(0,0,0,0.5) !important;
     display: block;
     margin-left: 2px;
     margin-right: 2px;
@@ -11,9 +29,12 @@ fieldset {
 
 legend {
     width: auto;
+    color: white;
 }
 
 table {
+	background-color: rgba(0,0,0,0.5) !important;
+	color: white;
     margin-top: 10px;
     margin-bottom: 10px; 
     margin-left: auto;
@@ -23,6 +44,8 @@ table {
 
 tr, td, th {
     border: 1px solid black;
+    padding: 5px;
+    text-align: center;
 }
 
 td {
@@ -30,5 +53,21 @@ td {
 }
 
 caption {
+	background-color: rgba(0,0,0,0.5) !important;
+	color: white;
+	text-align: center;
     caption-side: top;
+}
+
+
+.btn-submit{
+color: black;
+background-color: #FF8412;
+width: 100px;
+}
+
+.btn-submit:hover{
+color: black;
+background-color: white;
+
 }
