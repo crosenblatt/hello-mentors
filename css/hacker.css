@@ -8,6 +8,10 @@ height: 100%;
 font-family: 'Varela Round', sans-serif;
 }
 
+.navbar {
+    background-color: rgba(0,0,0,0.5) !important;
+}
+
 .card{
 margin-top: auto;
 margin-bottom: auto;
