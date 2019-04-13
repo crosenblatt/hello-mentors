@@ -16,18 +16,21 @@
     </head>
     <body>
         <div class = "container-fluid">
-            <form id = "submit-ticket-form">
+            <form id = "submit-ticket-form" action = "/api/submit-ticket" method = "POST">
                 <fieldset>
                     <legend>Submit a Ticket</legend>
                     <div class = "controls">
+                        <!--
                         <div class = "row">
                             <div class = "col">
                                 <div class = "form-group">
-                                    <label for = "name">Name</label>
-                                    <input id = "name" type = "text" class = "form-control" required = "required" data-error="Please enter your name">
+                                    <label for = "id">Name</label>
+                                    <input id = "id" type = "text" class = "form-control" required = "required" data-error="Please enter your name">
                                 </div>
                             </div>
                         </div>
+                        -->
+                        
                         <div class = "row">
                             <div class = "col">
                                 <div class = "form-group">
@@ -39,16 +42,16 @@
                         <div class = "row">
                             <div class = "col">
                                 <div class = "form-group">
-                                    <label for = "contact">Contact</label>
-                                    <input id = "contact" type = "text" class = "form-control" required = "required" data-error="Please enter your contact info">
+                                    <label for = "tags">Contact</label>
+                                    <input id = "tags" type = "text" class = "form-control" required = "required" data-error="Please enter your contact info">
                                 </div>
                             </div>
                         </div>
                         <div class = "row">
                             <div class = "col-md-12">
                                 <div class = "form-group">
-                                    <label for = "problem">Briefly explain your problem</label>
-                                    <textarea id = "problem" name = "problem" class = "form-control" rows = "4" required = "required" data-error="Please enter your question"></textarea>
+                                    <label for = "message">Briefly explain your problem</label>
+                                    <textarea id = "message" name = "problem" class = "form-control" rows = "4" required = "required" data-error="Please enter your question"></textarea>
                                 </div>
                             </div>
                             <div class = "col-md-12">
