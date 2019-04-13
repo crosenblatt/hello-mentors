@@ -2,7 +2,7 @@ $(document).ready(function() {
     $(".table-striped tbody").empty();
 
     $.ajax({
-    		url: "/api/get-open-tickets",
+    		url: "/api/get-all-tickets",
     		type: "GET",
     		dataType: "json",
     		success: function(data){
