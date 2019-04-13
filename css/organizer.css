@@ -12,6 +12,15 @@ font-family: 'Varela Round', sans-serif;
     background-color: rgba(0,0,0,0.5) !important;
 }
 
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height .10s ease;
+       -o-transition: height .10s ease;
+          transition: height .10s ease;
+}
+
 .card{
 margin-top: auto;
 margin-bottom: auto;
