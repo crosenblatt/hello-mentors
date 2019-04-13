@@ -23,6 +23,10 @@ body {
     color: white;
     margin: .5em 0 .75em;
   }
+
+  caption {
+    caption-side: top;
+  }
   
   table tr {
     background-color: #f8f8f8;
@@ -90,3 +94,14 @@ body {
       border-bottom: 0;
     }
   }
+
+.ticket_btn{
+color: black;
+background-color: #3498D8;
+width: 100px;
+}
+
+.ticket_btn:hover{
+color: black;
+background-color: #A9CCE3;
+}
