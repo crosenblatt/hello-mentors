@@ -9,6 +9,10 @@ body {
     line-height: 1.25;
   }
   
+.navbar {
+    background-color: rgba(0,0,0,0.5) !important;
+}
+
   table {
     border: 1px solid #ccc;
     border-collapse: collapse;
