@@ -19,7 +19,7 @@ function claimTicket(ticket) {
 							$("<tr>").append(
 							$("<td align = \"center\" data-label = \"Ticket ID\">").text(item.id),
 							$("<td align = \"center\" data-label = \"Name\">").text(item.name),
-							$("<td align = \"center\" data-label = \"Project Description\">").text(item.message),
+							$("<td align = \"center\" data-label = \"Problem\">").text(item.message),
 							$("<td align = \"center\" data-label = \"Location\">").text(item.location),
 							$("<td align = \"center\" data-label = \"Tags\">").text(item.tags),
 							$("<td align = \"center\" data-label = \"Time Submitted\">").text(`${date.toLocaleTimeString('en-US', {hour:'numeric', minute:'numeric', hour12:true})}`),
