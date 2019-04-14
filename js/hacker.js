@@ -14,6 +14,7 @@ $(document).ready(function() {
                 $("<td align = \"center\" data-label = \"Problem\">").text(item.message),
                 $("<td align = \"center\" data-label = \"Tags\">").text(item.tags),
                 $("<td align = \"center\" data-label = \"Time Submitted\">").text(`${date.toLocaleTimeString('en-US', {hour:'numeric', minute:'numeric', hour12:true})}`),
+                $("<td align = \"center\" data-label = \"Status\">").text(item.status)
                 ).appendTo("#hacker-tickets tbody");
             });
         }
@@ -68,6 +69,7 @@ $(document).ready(function() {
                     $("<td align = \"center\" data-label = \"Problem\">").text(item.message),
                     $("<td align = \"center\" data-label = \"Tags\">").text(item.tags),
                     $("<td align = \"center\" data-label = \"Time Submitted\">").text(`${date.toLocaleTimeString('en-US', {hour:'numeric', minute:'numeric', hour12:true})}`),
+                    $("<td align = \"center\" data-label = \"Status\">").text(item.status)
                     ).appendTo("#hacker-tickets tbody");
                 });
             }
