@@ -8,6 +8,9 @@ $(document).ready(function() {
     		success: function(data){
     			console.log(data);
     			$.each(data, function(index, item){
+                    if(item.status === "Closed") {
+                        return;
+                    }
     				var date = new Date(item.submit_time);
     				$("<tr>").append(
     				$("<td align = \"center\" data-label = \"Ticket ID\">").text(item.id),
