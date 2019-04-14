@@ -8,11 +8,6 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
         <title>Organizer</title>
-        <script>
-            function submitQuery() {
-                alert("question submitted");
-            }
-        </script>
     </head>
     <body>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -34,21 +29,21 @@
             </div> 
         </nav>
         <div class = "container-fluid">
-            <form id = "submit-ticket-form">
+            <form id = "sign-in-mentor-form">
                 <fieldset>
                     <legend>Sign in Mentor</legend>
                     <div class = "controls">
                         <div class = "row">
                             <div class = "col">
                                 <div class = "form-group">
-                                    <label for = "name">Name</label>
-                                    <input id = "name" type = "text" class = "form-control" required = "required" data-error="Please enter your name">
+                                    <label for = "email">Email</label>
+                                    <input id = "email" name="email" type = "text" class = "form-control" required = "required" data-error="Please enter your email">
                                 </div>
                             </div>
                         </div>
                         <div class = "row">
                             <div class = "col-md-12">
-                                <input type = "submit" value="Submit" class = "btn btn-submit" onclick = "submitQuery()">
+                                <input type = "submit" value="Submit" class = "btn btn-submit">
                             </div>
                         </div>
                     </div>
@@ -57,21 +52,21 @@
         </div>
 
         <div class = "container-fluid">
-            <form id = "submit-ticket-form">
+            <form id = "sign-out-mentor-form">
                 <fieldset>
                     <legend>Sign Out Mentor</legend>
                     <div class = "controls">
                         <div class = "row">
                             <div class = "col">
                                 <div class = "form-group">
-                                    <label for = "name">Name</label>
-                                    <input id = "name" type = "text" class = "form-control" required = "required" data-error="Please enter your name">
+                                    <label for = "email">Email</label>
+                                    <input id = "email" name="email" type = "text" class = "form-control" required = "required" data-error="Please enter your email">
                                 </div>
                             </div>
                         </div>
                         <div class = "row">
                             <div class = "col-md-12">
-                                <input type = "submit" value = "Submit" class = "btn btn-submit" onclick = "submitQuery()">
+                                <input type = "submit" value = "Submit" class = "btn btn-submit">
                             </div>
                         </div>
                     </div>
