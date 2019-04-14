@@ -75,10 +75,9 @@
 
         <div class="container-fluid">
             <div class= "row"> 
-                <div class="col">
                     <div class = "container-fluid">
                         <div class = "table-responsive">
-                            <table class = "table-striped">
+                            <table>
                                 <caption>Current Mentors</caption>
                                 <thead>
                                     <tr>
@@ -90,37 +89,36 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Chris Rosenblatt</td>
-                                        <td>None</td>
-                                        <td>Still alive but Im barely breathing</td>
-                                        <td>Never</td>
+                                        <td data-label= "Name">Chris Rosenblatt</td>
+                                        <td data-label="Skills">None</td>
+                                        <td data-label="Status">Still alive but Im barely breathing</td>
+                                        <td data-label="End Time">Never</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                </div>
-                <div class="col">
                     <div class = "container-fluid">
                         <div class = "table-responsive">
-                            <table class = "table-striped">
+                            <table id = "hacker-tickets">
                                 <caption>Your Tickets</caption>
                                 <thead>
                                     <tr>
                                         <th>Problem</th>
-                                        <th>Time Opened</th>
+                                        <th>Tags</th>
+                                        <th>Time Submitted</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Shit Broke</td>
-                                        <td>All the time</td>
+                                        <td data-label="Problem">Shit Broke</td>
+                                        <td data-label="Tags">ANDROID</td>
+                                        <td data-label="Time Submitted">All the time</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
         <script src="http://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="crossorigin="anonymous"></script>
