@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add a Mentor</title>
+    	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="./css/add-mentor.css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">Hello Mentors</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Logout</a>
+                </li>
+                    </ul>
+            </div> 
+        </nav>
+        <div class = "container-fluid">
+            <form id = "add-mentor">
+                <fieldset>
+                    <legend>Add Mentor</legend>
+                    <div class = "controls">
+                        <div class = "row">
+                            <div class = "col">
+                                <label for = "name">Name</label>
+                                <input id = "name" name = "name" type = "text" class = "form-control" required = "required" data-error="Please enter a name">
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class = "col">
+                                    <label for = "email">Email</label>
+                                    <input id = "email" name = "email" type = "email" class = "form-control" required = "required" data-error="Please enter an email">
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class = "col">
+                                    <label for = "skills">Skills</label>
+                                    <select name = "tags" class = "form-control" required = "required" data-error="Please select a skill" multiple>
+                                        <option value = "ANDROID">Android</option>
+                                        <option value="iOS">iOS</option>
+                                        <option value = "JAVA">Java</option>
+                                        <option value = "JAVASCRIPT">Javascript</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class = "col-md-12">
+                                    <input type = "submit" value="Submit" class = "btn btn-submit">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
