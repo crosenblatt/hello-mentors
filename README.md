@@ -1,5 +1,5 @@
 # Hello Mentors
-# Hello Mentors
+
 ## CS252 Final Project
 
 Made by: 
