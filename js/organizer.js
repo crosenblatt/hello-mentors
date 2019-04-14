@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".table-striped tbody").empty();
+    $(".table-responsive tbody").empty();
 
     $.ajax({
     		url: "/api/get-all-tickets",
@@ -22,6 +22,29 @@ $(document).ready(function() {
     		}
     	});
 
+        $.ajax({
+            url: "/api/get-current-mentors",
+            type: "GET",
+            dataType: "json",
+            success: function(data) {
+                console.log(data);
+                $.each(data, function(index, item){
+                    var date = new Date(item.start_time);
+                    var status;
+                    if (item.status == 1) {status = "BUSY";} 
+                    else {status = "OPEN";}
+                    $("<tr>").append(
+                    $("<td align = \"center\" data-label = \"Name\">").text(item.name),
+                    $("<td align = \"center\" data-label = \"Email\">").text(item.email),
+                    $("<td align = \"center\" data-label = \"Skills\">").text(item.skills),
+                    $("<td align = \"center\" data-label = \"Status\">").text(status),
+                    $("<td align = \"center\" data-label = \"Start Time\">").text(`${date.toLocaleTimeString('en-US', {hour:'numeric', minute:'numeric', hour12:true})}`),
+                    $("<td align = \"center\" data-label = \"Elapsed Time\">").text(item.elapsed_time)
+                    ).appendTo("#current-mentors tbody");
+                });
+            }
+        })
+
     $("#sign-in-mentor-form").submit(function(event) {
         $.ajax({
             url: "/api/checkin-mentor",
@@ -42,24 +65,29 @@ $(document).ready(function() {
             this.reset();
         })
 
-        /* USED TO UPDATE CURRENT MENTORS
         $.ajax({
-            url: "/api/get-hacker-tickets",
+            url: "/api/get-current-mentors",
             type: "GET",
             dataType: "json",
             success: function(data) {
-                $("#hacker-tickets tbody").empty();
+                $("#current-mentors tbody").empty();
                 $.each(data, function(index, item){
-                    var date = new Date(item.submit_time);
+                    var date = new Date(item.start_time);
+                    var status;
+                    if (item.status == 1) {status = "BUSY";} 
+                    else {status = "OPEN";}
                     $("<tr>").append(
-                    $("<td align = \"center\" data-label = \"Problem\">").text(item.message),
-                    $("<td align = \"center\" data-label = \"Tags\">").text(item.tags),
-                    $("<td align = \"center\" data-label = \"Time Submitted\">").text(`${date.toLocaleTimeString('en-US', {hour:'numeric', minute:'numeric', hour12:true})}`),
-                    ).appendTo("#hacker-tickets tbody");
+                    $("<td align = \"center\" data-label = \"Name\">").text(item.name),
+                    $("<td align = \"center\" data-label = \"Email\">").text(item.email),
+                    $("<td align = \"center\" data-label = \"Skills\">").text(item.skills),
+                    $("<td align = \"center\" data-label = \"Status\">").text(status),
+                    $("<td align = \"center\" data-label = \"Start Time\">").text(`${date.toLocaleTimeString('en-US', {hour:'numeric', minute:'numeric', hour12:true})}`),
+                    $("<td align = \"center\" data-label = \"Elapsed Time\">").text(item.elapsed_time)
+                    ).appendTo("#current-mentors tbody");
                 });
             }
         })
-        */
+        
         event.preventDefault();
     });
 
@@ -83,24 +111,30 @@ $(document).ready(function() {
             this.reset();
         })
 
-        /* USED TO UPDATE CURRENT MENTORS
+        
         $.ajax({
-            url: "/api/get-hacker-tickets",
+            url: "/api/get-current-mentors",
             type: "GET",
             dataType: "json",
             success: function(data) {
-                $("#hacker-tickets tbody").empty();
+                $("#current-mentors tbody").empty();
                 $.each(data, function(index, item){
-                    var date = new Date(item.submit_time);
+                    var date = new Date(item.start_time);
+                    var status;
+                    if (item.status == 1) {status = "BUSY";} 
+                    else {status = "OPEN";}
                     $("<tr>").append(
-                    $("<td align = \"center\" data-label = \"Problem\">").text(item.message),
-                    $("<td align = \"center\" data-label = \"Tags\">").text(item.tags),
-                    $("<td align = \"center\" data-label = \"Time Submitted\">").text(`${date.toLocaleTimeString('en-US', {hour:'numeric', minute:'numeric', hour12:true})}`),
-                    ).appendTo("#hacker-tickets tbody");
+                    $("<td align = \"center\" data-label = \"Name\">").text(item.name),
+                    $("<td align = \"center\" data-label = \"Email\">").text(item.email),
+                    $("<td align = \"center\" data-label = \"Skills\">").text(item.skills),
+                    $("<td align = \"center\" data-label = \"Status\">").text(status),
+                    $("<td align = \"center\" data-label = \"Start Time\">").text(`${date.toLocaleTimeString('en-US', {hour:'numeric', minute:'numeric', hour12:true})}`),
+                    $("<td align = \"center\" data-label = \"Elapsed Time\">").text(item.elapsed_time)
+                    ).appendTo("#current-mentors tbody");
                 });
             }
         })
-        */
+        
         event.preventDefault();
     });
 });

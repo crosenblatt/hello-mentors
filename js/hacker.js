@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-    $("#hacker-tickets tbody").empty();
+    $(".table-responsive tbody").empty();
+
     $.ajax({
         url: "/api/get-hacker-tickets",
         type: "GET",
@@ -18,6 +19,24 @@ $(document).ready(function() {
         }
     })
 
+    $.ajax({
+        url: "/api/get-current-mentors",
+        type: "GET",
+        dataType: "json",
+        success: function(data) {
+            $("#current-mentors tbody").empty();
+            $.each(data, function(index, item){
+                var status;
+                if (item.status == 1) {status = "BUSY";} 
+                else {status = "OPEN";}
+                $("<tr>").append(
+                $("<td align = \"center\" data-label = \"Name\">").text(item.name),
+                $("<td align = \"center\" data-label = \"Skills\">").text(item.skills),
+                $("<td align = \"center\" data-label = \"Status\">").text(status),
+                ).appendTo("#current-mentors tbody");
+            });
+        }
+    })
 
     $("#submit-ticket-form").submit(function(event) {
         $.ajax({
