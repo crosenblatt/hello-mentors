@@ -5,8 +5,8 @@ $(document).ready(function() {
             type: "POST",
             dataType: "json",
             data: { email: $("input[name=email]").val() }, 
-            success: function(result) {
-                alert("Email Sent, Check Your Inbox");
+            success: function() {
+                //alert("Email Sent, Check Your Inbox");
             },
             error: function(err) {
                 //alert(err);
@@ -16,6 +16,7 @@ $(document).ready(function() {
         $("#email-form").each(function() {
             this.reset();
         });
+        alert("Email Sent, Check Your Inbox");
         event.preventDefault();
     });
 })
