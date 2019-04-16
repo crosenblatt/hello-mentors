@@ -23,7 +23,7 @@ $(document).ready(function() {
                         window.location.search = "";
                         window.location.pathname = "/login";
                     } else {
-                        
+                        window.location.pathname = "/invalid-token";
                     }
                 }
             });
