@@ -9,11 +9,18 @@ function fetchData() {
             $("#hacker-tickets tbody").empty();
             $.each(data, function(index, item){
                 var date = new Date(item.submit_time);
+                var name;
+                if(item.name == null) {
+                    name = "N/A"
+                } else {
+                    name = item.name;
+                }
                 $("<tr>").append(
                 $("<td align = \"center\" data-label = \"Problem\">").text(item.message),
                 $("<td align = \"center\" data-label = \"Tags\">").text(item.tags),
                 $("<td align = \"center\" data-label = \"Time Submitted\">").text(`${date.toLocaleTimeString('en-US', {hour:'numeric', minute:'numeric', hour12:true})}`),
-                $("<td align = \"center\" data-label = \"Status\">").text(item.status)
+                $("<td align = \"center\" data-label = \"Status\">").text(item.status),
+                $("<td align = \"center\" data-label = \"Mentor\">").text(name)
                 ).appendTo("#hacker-tickets tbody");
             });
         }
@@ -28,7 +35,7 @@ function fetchData() {
             $.each(data, function(index, item){
                 var status;
                 if (item.status == 1) {status = "BUSY";} 
-                else {status = "OPEN";}
+                else {status = "AVAILABLE";}
                 $("<tr>").append(
                 $("<td align = \"center\" data-label = \"Name\">").text(item.name),
                 $("<td align = \"center\" data-label = \"Skills\">").text(item.skills),
@@ -50,11 +57,18 @@ $(document).ready(function() {
             $("#hacker-tickets tbody").empty();
             $.each(data, function(index, item){
                 var date = new Date(item.submit_time);
+                var name;
+                if(item.name == null) {
+                    name = "N/A"
+                } else {
+                    name = item.name;
+                }
                 $("<tr>").append(
                 $("<td align = \"center\" data-label = \"Problem\">").text(item.message),
                 $("<td align = \"center\" data-label = \"Tags\">").text(item.tags),
                 $("<td align = \"center\" data-label = \"Time Submitted\">").text(`${date.toLocaleTimeString('en-US', {hour:'numeric', minute:'numeric', hour12:true})}`),
-                $("<td align = \"center\" data-label = \"Status\">").text(item.status)
+                $("<td align = \"center\" data-label = \"Status\">").text(item.status),
+                $("<td align = \"center\" data-label = \"Mentor\">").text(name)
                 ).appendTo("#hacker-tickets tbody");
             });
         }
@@ -110,11 +124,18 @@ $(document).ready(function() {
                 $("#hacker-tickets tbody").empty();
                 $.each(data, function(index, item){
                     var date = new Date(item.submit_time);
+                    var name;
+                    if(item.name == null) {
+                        name = "N/A"
+                    } else {
+                        name = item.name;
+                    }
                     $("<tr>").append(
                     $("<td align = \"center\" data-label = \"Problem\">").text(item.message),
                     $("<td align = \"center\" data-label = \"Tags\">").text(item.tags),
                     $("<td align = \"center\" data-label = \"Time Submitted\">").text(`${date.toLocaleTimeString('en-US', {hour:'numeric', minute:'numeric', hour12:true})}`),
-                    $("<td align = \"center\" data-label = \"Status\">").text(item.status)
+                    $("<td align = \"center\" data-label = \"Status\">").text(item.status),
+                    $("<td align = \"center\" data-label = \"Mentor\">").text(name)
                     ).appendTo("#hacker-tickets tbody");
                 });
             }

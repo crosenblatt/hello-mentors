@@ -36,7 +36,7 @@ function fetchData(){
                     var date = new Date(item.start_time);
                     var status;
                     if (item.status == 1) {status = "BUSY";} 
-                    else {status = "OPEN";}
+                    else {status = "AVAILABLE";}
                     $("<tr>").append(
                     $("<td align = \"center\" data-label = \"Name\">").text(item.name),
                     $("<td align = \"center\" data-label = \"Email\">").text(item.email),
@@ -89,7 +89,7 @@ $(document).ready(function() {
                     var date = new Date(item.start_time);
                     var status;
                     if (item.status == 1) {status = "BUSY";} 
-                    else {status = "OPEN";}
+                    else {status = "AVAILABLE";}
                     $("<tr>").append(
                     $("<td align = \"center\" data-label = \"Name\">").text(item.name),
                     $("<td align = \"center\" data-label = \"Email\">").text(item.email),
@@ -133,7 +133,7 @@ $(document).ready(function() {
                     var date = new Date(item.start_time);
                     var status;
                     if (item.status == 1) {status = "BUSY";} 
-                    else {status = "OPEN";}
+                    else {status = "AVAILABLE";}
                     $("<tr>").append(
                     $("<td align = \"center\" data-label = \"Name\">").text(item.name),
                     $("<td align = \"center\" data-label = \"Email\">").text(item.email),
