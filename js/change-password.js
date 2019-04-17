@@ -21,7 +21,7 @@ $(document).ready(function() {
                     console.log(data);
                     if(data.status == 200) {
                         window.location.search = "";
-                        window.location.pathname = "/password-change-sucess";
+                        window.location.pathname = "/password-change-success";
                     } else {
                         window.location.pathname = "/invalid-token";
                     }
