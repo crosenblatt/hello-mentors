@@ -68,7 +68,11 @@ $(document).ready(function() {
             $("#current-mentors tbody").empty();
             $.each(data, function(index, item){
                 var status;
-                if (item.status == 1) {status = "BUSY";} 
+                if (item.status == 1) {
+                    status = "BUSY";
+                } else if(item.status == 0) {
+                    status = "AVAILABLE";
+                } 
                 else {status = "OPEN";}
                 $("<tr>").append(
                 $("<td align = \"center\" data-label = \"Name\">").text(item.name),
