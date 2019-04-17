@@ -1,0 +1,49 @@
+html,body{
+    background-color: #660000;
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.navbar {
+    background-color: rgba(0,0,0,0.5) !important;
+}
+
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height .10s ease;
+         -o-transition: height .10s ease;
+            transition: height .10s ease;
+}
+
+fieldset {
+	color: white;
+	background-color: rgba(0,0,0,0.5) !important;
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove;
+}
+
+legend {
+    width: auto;
+    color: white;
+}
+
+.btn-submit{
+    color: black;
+    background-color: #FF8412;
+    width: 100px;
+}
+
+.btn-submit:hover{
+    color: black;
+    background-color: white;
+} 
