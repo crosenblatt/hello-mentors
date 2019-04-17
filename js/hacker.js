@@ -55,7 +55,7 @@ $(document).ready(function() {
         
         $("#submit-ticket-form").each(function() {
             this.reset();
-        })
+        });
 
         $.ajax({
             url: "/api/get-hacker-tickets",
