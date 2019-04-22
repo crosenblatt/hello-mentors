@@ -9,6 +9,8 @@ Made by:
 
 Project Name: Hello Mentors
 
+Youtube Video: https://youtu.be/HgXzqagXzKs
+
 Project Description: An all-in-one mentor organization system for hackathons. Hello Mentors has 3 main features:
 - _For Organizers:_ Hello Mentors allows you to check in and check out mentors, view your currently online mentors and their skills, and view all active tickets so you can always keep track of what's going on.
 - _For Mentors:_ Hello Mentors allows you to see all available tickets and any tickets you have claimed. This way you can keep track of what tickets are available and you can find what you've signed up to do.
@@ -20,3 +22,9 @@ Technologies used:
 - Bootstrap
 - Node.js
 - MySQL
+- Express
+- Passport.js
+- Winston
+- SendGrid
+- Docker
+- DigitalOcean
